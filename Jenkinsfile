@@ -1,4 +1,4 @@
-@Library('My-shared-jenkins')
+
 
 pipeline{
     agent any
@@ -10,9 +10,7 @@ pipeline{
         }
         stage('second'){
             steps{
-                script{
-                    build()
-                }
+               echo 'check'
             }
         }
     }
